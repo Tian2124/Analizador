@@ -1,0 +1,10 @@
+El veloz murciélago hindú comía feliz cardillo y kiwi.
+La cigüeña tocaba el saxofón detrás del palenque de paja.
+Python es un lenguaje de programación poderoso y elegante.
+Con Python puedes analizar texto, construir aplicaciones web y mucho más.
+El análisis de texto es una habilidad fundamental en la ciencia de datos.
+Python facilita el procesamiento de lenguaje natural de forma sencilla.
+La práctica constante es la clave para dominar cualquier lenguaje de programación.
+Aprender Python abre puertas en el mundo de la tecnología y la inteligencia artificial.
+El texto puede contener palabras raras y palabras comunes al mismo tiempo.
+La frecuencia de las palabras revela patrones interesantes en cualquier documento.
