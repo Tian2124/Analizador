@@ -51,7 +51,6 @@ python3 analyzer.py
  Umbrales query  rara ≤ 1, común ≥ 5; ajustables en `TextAnalyzer.query()` 
  Errores  `try/except` específico en cada punto de fallo (carga, análisis, consulta) 
 
----
 ## Ejemplo de reporte
 ```
 =======================================================
