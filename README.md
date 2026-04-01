@@ -4,7 +4,6 @@ Analiza un texto y genera un reporte con métricas (frecuencias, tokens únicos,
 con consultas interactivas por palabra.
 
 ## Estructura del proyecto
-
 ```
 text_analyzer/
 ├── analyzer.py   ← código principal (funciones + clase TextAnalyzer)
@@ -12,9 +11,6 @@ text_analyzer/
 ├── sample.txt    ← texto de ejemplo para prueba en modo archivo
 └── README.md
 ```
-
----
-
 ## Cómo ejecutar
 
 ### Modo interactivo (consola)
@@ -56,9 +52,7 @@ python3 analyzer.py
  Errores  `try/except` específico en cada punto de fallo (carga, análisis, consulta) 
 
 ---
-
 ## Ejemplo de reporte
-
 ```
 =======================================================
            REPORTE DE ANÁLISIS DE TEXTO
