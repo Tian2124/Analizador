@@ -1,17 +1,7 @@
 # Analizador de Texto 📄
 
-Herramienta Python 3.12+ que analiza un texto y genera un reporte con métricas
-(frecuencias, tokens únicos, top 10 palabras, longitud promedio, etc.)
+Analiza un texto y genera un reporte con métricas (frecuencias, tokens únicos, top 10 palabras, longitud promedio, etc.)
 con consultas interactivas por palabra.
-
----
-
-## Requisitos
-
-- **Python 3.12+** (sin dependencias externas)
-- Solo librerías estándar: `re`, `collections.Counter`, `unittest`
-
----
 
 ## Estructura del proyecto
 
@@ -28,10 +18,6 @@ text_analyzer/
 ## Cómo ejecutar
 
 ### Modo interactivo (consola)
-
-```bash
-python3 analyzer.py
-```
 
 Se presentará un menú:
 1. **Modo archivo** → ingresar la ruta a un `.txt`
@@ -61,30 +47,13 @@ python3 analyzer.py
 # Ruta: sample.txt
 ```
 
----
-
-## Cómo correr las pruebas
-
-### Con pytest (recomendado)
-
-### Con asserts rápidos (sin framework)
-
-```bash
-python3 tests.py
-```
-
----
-
 ## Decisiones de diseño
-
-| Tema | Decisión |
-|---|---|
-| Normalización | `re.sub(r"[^\w\s]", " ")` → conserva letras Unicode (acentos, ñ) y dígitos sin librerías externas |
-| Conteos | `collections.Counter` (subclase de `dict`) → O(n) tiempo, API limpia |
-| Únicos | `set` → membresía O(1) y eliminación automática de duplicados |
-| Empates (más larga/corta) | Se listan **todas** las palabras empatadas, ordenadas alfabéticamente |
-| Umbrales query | rara ≤ 1, común ≥ 5; ajustables en `TextAnalyzer.query()` |
-| Errores | `try/except` específico en cada punto de fallo (carga, análisis, consulta) |
+ Normalización  `re.sub(r"[^\w\s]", " ")` → conserva letras Unicode (acentos, ñ) y dígitos sin librerías externas 
+ Conteos  `collections.Counter` (subclase de `dict`) → O(n) tiempo, API limpia 
+ Únicos  `set` → membresía O(1) y eliminación automática de duplicados 
+ Empates (más larga/corta)  Se listan todas las palabras empatadas, ordenadas alfabéticamente 
+ Umbrales query  rara ≤ 1, común ≥ 5; ajustables en `TextAnalyzer.query()` 
+ Errores  `try/except` específico en cada punto de fallo (carga, análisis, consulta) 
 
 ---
 
